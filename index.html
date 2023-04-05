@@ -1,0 +1,19 @@
+<html>
+
+<head></head>
+<body>
+    <p>hello world</p>
+    <script>
+        async function foo() {
+            response = await fetch('https://wallpaperaccess.com/full/5850074.jpg', { mode:'no-cors'})
+        }
+    foo()
+
+    </script>
+    <!--
+    not possible to make a cors request from local stored file with scheme file:///, because of cors design, it doesn't allow cors
+    request unless there is a real origin and scheme is http or https
+    stackoverflow.com/questions/48362093/cors-request-blocked-in-locally-opened-html-file#:~:text=Not%20Possible%20By%20Design,requests%20from%20a%20file.
+    -->
+</body>
+</html>
